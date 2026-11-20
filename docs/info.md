@@ -1,20 +1,44 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+ICIEQ is a custom analog integrated circuit designed
+for power semiconductor gate driver applications.
+
+The circuit is implemented in the SKY130A technology
+using 21 PMOS and 9 NMOS transistors.
+
+The analog core contains differential input stages,
+current mirrors, and a push-pull output stage.
+
+An external resistor connected to Rset is used
+to configure the circuit bias.
 
 ## How to test
 
-Explain how to use your project
+Apply appropriate supply voltages within the
+approved operating limits of the fabrication process
+and Tiny Tapeout analog interface.
+
+Connect an external resistor to Rset.
+Apply differential input signals to INp and INn.
+Monitor the output voltage at OUT.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+- Current-limited power supplies
+- External bias resistor
+- Signal generator
+- Oscilloscope
+- External load circuit
+
+## Analog pinout
+
+| Pin | Function |
+|-----|----------|
+| ua[0] | VEE |
+| ua[1] | OUT |
+| ua[2] | Rset |
+| ua[3] | VDD |
+| ua[4] | INn |
+| ua[5] | INp |
+
+All digital interfaces are unused.
