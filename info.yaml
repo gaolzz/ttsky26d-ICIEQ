@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title: "ICIEQ Analog Gate Driver"
-  author:       ""      # Your name
+  author: "Gao Liu"
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description: "Analog IC for power semiconductor gate driver applications"
   language: "Analog"
